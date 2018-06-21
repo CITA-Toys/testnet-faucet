@@ -1,24 +1,22 @@
-# README
+# Testnet Faucet
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Initial Project
 
-Things you may want to cover:
+```bash
+cp config/database.yml.sample config/database.yml
 
-* Ruby version
+rails db:setup
+```
 
-* System dependencies
+## Run Test
 
-* Configuration
+```bash
+rails test
+```
 
-* Database creation
+## Run Project
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails s
+./bin/webpack-dev-server
+```
